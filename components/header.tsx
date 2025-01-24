@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Bell } from "lucide-react"
+import Logo from '../public/logo_s.png'
 
 export function Header() {
   return (
@@ -7,14 +8,12 @@ export function Header() {
       <div className="flex items-center gap-4">
         <div className="w-12 h-12 relative">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZpgmjUrRt8vPnauKlg60reKmDDmmIh.png"
+            src={Logo}
             alt="Logo"
-            width={48}
-            height={48}
-            className="object-contain"
+            className="ml-[-250px] w-24 h-14 "
           />
         </div>
-        <h1 className="text-2xl font-bold text-[#00008B]">Personalized Study Planner</h1>
+        <h1 className="text-2xl font-bold text-[#01135B] ml-[-245px]">Personalized Study Planner</h1>
       </div>
       <div className="flex items-center gap-4">
         <button className="relative">
