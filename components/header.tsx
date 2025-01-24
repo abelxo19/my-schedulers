@@ -3,7 +3,7 @@ import { Bell } from "lucide-react"
 import Logo from '../public/logo_s.png'
 import Pp from '../public/elli.png'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-
+import { ChevronDown } from "lucide-react"
 
 export function Header() {
   return (
@@ -29,6 +29,7 @@ export function Header() {
             <AvatarFallback>PP</AvatarFallback>
           </Avatar>
           <span className="font-medium">Sarah Martins</span>
+          <ChevronDown className="text-gray-500" />
         </div>
       </div>
     </header>
