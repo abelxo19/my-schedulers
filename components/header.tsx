@@ -1,6 +1,9 @@
 import Image from "next/image"
 import { Bell } from "lucide-react"
 import Logo from '../public/logo_s.png'
+import Pp from '../public/elli.png'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 export function Header() {
   return (
@@ -21,7 +24,10 @@ export function Header() {
           <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
         </button>
         <div className="flex items-center gap-3">
-          <Image src="/placeholder.svg" alt="Profile picture" width={40} height={40} className="rounded-full" />
+          <Avatar className="rounded-full">
+            <AvatarImage src={Pp.src} alt="Profile picture" />
+            <AvatarFallback>PP</AvatarFallback>
+          </Avatar>
           <span className="font-medium">Sarah Martins</span>
         </div>
       </div>
